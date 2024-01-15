@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="index.html">Bintang Syafrian</a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bintang Syafrian</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.png" alt="Bintang Syafrian profile picture">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">
+                Bintang Syafrian
+            </h1>
+            <p class="section-text-p2">
+                Undergraduate Computer Science Student
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Let's chat!
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/bintangsyafrian/?originalSubdomain=id'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="GitHub Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/gnatnib'"
+                />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="particle.js"></script>
+</body>
+</html>
