@@ -8,7 +8,7 @@ canvas.style.width = `${window.innerWidth}px`;
 canvas.style.height = `${window.innerHeight}px`;
 
 class Paricle{
-    constructor(x, y, effect){
+    constructor(x, y, effect){  
         this.originX = x;
         this.originY = y;
         this.effect = effect;
@@ -59,7 +59,7 @@ class Effect {
         this.height = height;
         this.ctx = context;
         this.particlesArray = [];
-        this.gap = 30;
+        this.gap = 20;
         this.mouse = {
             radius: 3000,
             x: 0,

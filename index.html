@@ -33,7 +33,7 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -230,9 +230,105 @@
         <img src="./assets/arrow.png" 
         alt="Arrow icon" 
         class="icon-arrow" 
-        onclick="location.href='./#project'"
+        onclick="location.href='./#projects'"
         />
     </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skillset-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="skillset-sub-title project-title">
+                    Bidlix
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/gnatnib/bidlix'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://bidlix.vercel.app/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" 
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="skillset-sub-title project-title">
+                    Dashboard Bengkel
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/gnatnib/dashboardbengkel'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://dashboardbengkel.vercel.app/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div></div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon-arrow" 
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Let's talk!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="email icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:bintang.syafrian@gmail.com">bintang.syafrian@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/bintangsyafrian/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon-arrow contact-arrow" 
+        onclick="location.href='./#'"
+        />
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skillset">Skillset</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Created with <svg viewBox="0 0 1792 1792" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="height: 0.8rem;"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" fill="#e25555"></path></svg> by Bintang Syafrian.</p>
+    </footer>
     <script src="script.js"></script>
     <script src="particle.js"></script>
 </body>
