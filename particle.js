@@ -15,7 +15,7 @@ class Paricle{
         this.x = Math.floor(x);
         this.y = Math.floor(y);
         this.ctx = this.effect.ctx;
-        this.ctx.fillStyle = 'black';
+        this.ctx.fillStyle = 'grey';
         this.vx = 0;
         this.vy = 0;
         this.ease = 0.2;
@@ -25,7 +25,7 @@ class Paricle{
         this.distance = 0;
         this.force = 0;
         this.angle = 0;
-        this.size = Math.floor(Math.random() * 5);
+        this.size = Math.floor(Math.random() * 3.5);
         this.draw();
     }   
 
@@ -59,7 +59,7 @@ class Effect {
         this.height = height;
         this.ctx = context;
         this.particlesArray = [];
-        this.gap = 20;
+        this.gap = 30;
         this.mouse = {
             radius: 3000,
             x: 0,
