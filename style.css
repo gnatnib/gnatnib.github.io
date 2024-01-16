@@ -173,14 +173,15 @@ section {
 
 .section-pic-container {
     display: flex;
-    width: 400px;
-    height: 400px; /* Set a fixed square size */
+    width: 200px; /* Adjust the width to your preference */
+    height: 200px; /* Adjust the height to your preference */
     position: relative;
     margin: auto 0;
-    border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+    border-radius: 50%; /* Circular frame */
 }
 
 .section-pic-container:hover {
@@ -192,12 +193,12 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular frame */
 }
 
-.section-text{
+.section-text {
     align-self: center;
-    text-align: center;   
+    text-align: center;
 }
 
 .section-text p {
@@ -231,6 +232,13 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: rgb(53, 53, 53); /* Change to your desired hover color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
 }
 
 /* BUTTONS */
@@ -265,3 +273,59 @@ section {
     color: white;
 }
 
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, 
+.about-details-container{
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    cursor: pointer;
+    height: 2rem;
+    width: auto;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 10px; /* Rounded corners */
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section-pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
