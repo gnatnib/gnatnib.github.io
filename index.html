@@ -1,384 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <canvas id="particle-canvas"></canvas>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bintang Syafrian</title>
-    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg?">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg?" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">
-            <a href="index.html">Bintang Syafrian</a>
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skillset">Skillset</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">
+        <a href="index.html">Bintang Syafrian</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skillset">Skillset</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Bintang Syafrian</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Bintang Syafrian</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
 
     <section id="profile">
-        <div class="section-pic-container">
-            <img src="./assets/profile.png" alt="Bintang Syafrian profile picture">
+      <div class="section-pic-container">
+        <img
+          src="./assets/profile.png"
+          alt="Bintang Syafrian profile picture"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Bintang Syafrian</h1>
+        <p class="section-text-p2">
+          Undergraduate Computer Science Student at Diponegoro University
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Newest_Bintang Syafrian Rizal.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me!
+          </button>
         </div>
-        <div class="section-text">
-            <p class="section-text-p1">
-                Hello, I'm
-            </p>
-            <h1 class="title">
-                Bintang Syafrian
-            </h1>
-            <p class="section-text-p2">
-                Undergraduate Computer Science Student at Diponegoro University
-            </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Newest_Bintang Syafrian Rizal.pdf')">
-                Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Me!
-                </button>
-            </div>
-            <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="LinkedIn Profile" 
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/bintangsyafrian/?originalSubdomain=id'"
-                />
-                <img 
-                src="./assets/instagram.png" 
-                alt="Instagram Profile" 
-                class="icon" 
-                onclick="location.href='https://www.instagram.com/bintwang/'"
-                />
-                <img 
-                src="./assets/github.png" 
-                alt="GitHub Profile" 
-                class="icon" 
-                onclick="location.href='https://github.com/gnatnib'"
-                />
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bintangsyafrian/?originalSubdomain=id'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram Profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/bintwang/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/gnatnib'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section-text-p1">Get To Know Me</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" 
-                        alt="Experience icon" 
-                        class="icon"
-                        />
-                        <h3>Traits</h3>
-                        <p>Thinker <br>Team-oriented<br>Proactive Problem Solver</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="Education icon" 
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>
-                            Undergraduate Computer Science
-                        </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Hello! 👋 I'm Bintang Syafrian Rizal, 
-                        a Computer Science student at Diponegoro University. Proficient in HTML, CSS, JavaScript, Python, SQL, and C/C++, I'm passionate about problem solving and building simple technology but complex under the hood. Explore my portfolio to see projects showcasing my coding skills and commitment to technology. Let's connect and explore the endless possibilities at the intersection of passion and technology! 🌟 
-                    </p>
-                </div>
-            </div>
+      <p class="section-text-p1">Get To Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon-arrow" 
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Traits</h3>
+              <p>Thinker <br />Team-oriented<br />Proactive Problem Solver</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Undergraduate Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! 👋 I'm Bintang Syafrian Rizal, a Computer Science student
+              at Diponegoro University. Proficient in HTML, CSS, JavaScript,
+              Python, SQL, and C/C++, I'm passionate about problem solving and
+              building simple technology but complex under the hood. Explore my
+              portfolio to see projects showcasing my coding skills and
+              commitment to technology. Let's connect and explore the endless
+              possibilities at the intersection of passion and technology! 🌟
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow"
         onclick="location.href='./#skillset'"
-        />
+      />
     </section>
     <section id="skillset">
-        <p class="section-text-p1">Explore My</p>
-        <h1 class="title">Skillset</h1>
-        <div class="skillset-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="skillset-sub-title">Programming Language</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/html.png" 
-                            alt="HTML icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/css.png" 
-                            alt="CSS icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/javascript.png" 
-                            alt="Javascript icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/python.png" 
-                            alt="python icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/sql-removebg-preview.png" 
-                            alt="SQL icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SQL Database</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/git.png" 
-                            alt="GIT icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>GIT</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Skillset</h1>
+      <div class="skillset-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skillset-sub-title">Programming Language</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/html.png" alt="HTML icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="skillset-sub-title">Others</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/video.png" 
-                            alt="video icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Video Editing</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/photoshop.png" 
-                            alt="photoshop icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Photoshop</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/copywriting.png" 
-                            alt="copywriting icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Copywriting</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img src="./assets/css.png" alt="CSS icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Javascript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/python.png" alt="python icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql-removebg-preview.png"
+                  alt="SQL icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Database</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/git.png" alt="GIT icon" class="icon" />
+                <div>
+                  <h3>GIT</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skillset-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/video.png" alt="video icon" class="icon" />
+                <div>
+                  <h3>Video Editing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/photoshop.png"
+                  alt="photoshop icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/copywriting.png"
+                  alt="copywriting icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Copywriting</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon-arrow" 
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow"
         onclick="location.href='./#projects'"
-        />
+      />
     </section>
     <section id="projects">
-        <p class="section-text-p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="skillset-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png" 
-                    alt="Project 1"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="skillset-sub-title project-title">
-                    Bidlix
-                </h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://github.com/gnatnib/bidlix', '_blank')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://bidlix.vercel.app/', '_blank')">
-                        Live Demo
-                    </button>
-                </div>
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skillset-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png" 
-                    alt="Project 2"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="skillset-sub-title project-title">
-                    Dashboard Bengkel
-                </h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://github.com/gnatnib/dashboardbengkel', '_blank')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://dashboardbengkel.vercel.app/', '_blank')">
-                        Live Demo
-                    </button>
-                </div>
+            <h2 class="skillset-sub-title project-title">Bidlix</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/gnatnib/bidlix', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://bidlix.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png" 
-                    alt="Project 3"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="skillset-sub-title project-title">
-                    Caresi
-                </h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://github.com/gnatnib/caresi', '_blank')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://caresi.vercel.app/', '_blank')">
-                        Live Demo
-                    </button>
-                </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-4.png" 
-                    alt="Project 4"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="skillset-sub-title project-title">
-                    Notify Me
-                </h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://github.com/gnatnib/notifyme', '_blank')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="window.open('https://notifyme-schedule.vercel.app/', '_blank')">
-                        Live Demo
-                    </button>
-                </div>
+            <h2 class="skillset-sub-title project-title">DashBeng</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/gnatnib/dashboardbengkel', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://dashboardbengkel.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
             </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skillset-sub-title project-title">Caresi</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/gnatnib/caresi', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://caresi.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skillset-sub-title project-title">Notify Me</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/gnatnib/notifyme', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://notifyme-schedule.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-        </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon-arrow" 
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow"
         onclick="location.href='./#contact'"
-        />
+      />
     </section>
     <section id="contact">
-        <p class="section-text-p1">Let's chat!</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="email icon" 
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:bintang.syafrian@gmail.com">bintang.syafrian@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="linkedin icon" 
-                class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/bintangsyafrian/">LinkedIn</a>
-                </p>
-            </div>
+      <p class="section-text-p1">Let's chat!</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:bintang.syafrian@gmail.com"
+              >bintang.syafrian@gmail.com</a
+            >
+          </p>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon-arrow contact-arrow" 
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/bintangsyafrian/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow contact-arrow"
         onclick="location.href='./#'"
-        />
+      />
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skillset">Skillset</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Created with <svg viewBox="0 0 1792 1792" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="height: 0.8rem;"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" fill="#e25555"></path></svg> by Bintang Syafrian.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skillset">Skillset</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Created with
+        <svg
+          viewBox="0 0 1792 1792"
+          preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 0.8rem"
+        >
+          <path
+            d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"
+            fill="#e25555"
+          ></path>
+        </svg>
+        by Bintang Syafrian.
+      </p>
     </footer>
     <script src="script.js"></script>
     <script src="particle.js"></script>
-</body>
+  </body>
 </html>
